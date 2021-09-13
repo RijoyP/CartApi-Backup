@@ -204,11 +204,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\DevOps\\cart-api\\cart-api\\cart-api.csproj",
+      "projectUniqueName": "D:\\DevOpsLatest\\cart-api\\cart-api\\cart-api.csproj",
       "projectName": "cart-api",
-      "projectPath": "D:\\DevOps\\cart-api\\cart-api\\cart-api.csproj",
+      "projectPath": "D:\\DevOpsLatest\\cart-api\\cart-api\\cart-api.csproj",
       "packagesPath": "C:\\Users\\RIJOY\\.nuget\\packages\\",
-      "outputPath": "D:\\DevOps\\cart-api\\cart-api\\obj\\",
+      "outputPath": "D:\\DevOpsLatest\\cart-api\\cart-api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RIJOY\\AppData\\Roaming\\NuGet\\NuGet.Config",
