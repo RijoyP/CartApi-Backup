@@ -12,9 +12,6 @@ RUN dotnet restore
 COPY cart-api/. ./cart-api/
 
 WORKDIR /app/cart-api
-RUN dotnet publish -o out
-
-WORKDIR /app
-COPY --from=publish /app/cart-api/out ./
+RUN dotnet publish -c release -o out
 
 ENTRYPOINT ["dotnet", "cart-api.dll"]
