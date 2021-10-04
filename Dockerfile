@@ -14,7 +14,6 @@ COPY cart-api/. ./cart-api/
 WORKDIR /app/cart-api
 RUN dotnet publish -o out
 
-FROM microsoft/dotnet:2.0-runtime AS runtime
 WORKDIR /app
 COPY --from=publish /app/cart-api/out ./
 
