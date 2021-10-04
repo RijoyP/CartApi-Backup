@@ -5,14 +5,11 @@ WORKDIR /app
 # copy csproj and restore as distinct layers
 COPY *.sln .
 COPY cart-api/*.csproj ./cart-api/
-COPY utils/*.csproj ./utils/
-COPY tests/*.csproj ./tests/
+
 RUN dotnet restore
 
 # copy and build everything else
 COPY cart-api/. ./cart-api/
-COPY utils/. ./utils/
-COPY tests/. ./tests/
 
 WORKDIR /app/cart-api
 RUN dotnet publish -o out
