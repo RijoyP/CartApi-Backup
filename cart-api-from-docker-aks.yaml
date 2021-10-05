@@ -19,8 +19,6 @@ spec:
         image: cart-api:1.0
         ports:
         - containerPort: 80
-      imagePullSecrets:
-      - name: acr-secret
 ---
 apiVersion: v1
 kind: Service
