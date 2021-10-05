@@ -5,7 +5,7 @@ WORKDIR /source
 # copy everything else and build app
 COPY cart-api/. ./cart-api/
 WORKDIR /source/cart-api
-RUN dotnet publish -c release -o app
+RUN dotnet publish -c release -o /app
 
 # final stage/image
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
