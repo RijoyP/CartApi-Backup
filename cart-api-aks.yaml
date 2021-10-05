@@ -18,7 +18,7 @@ spec:
       - name: cart-api
         image: rijoyacr.azurecr.io/cart-api:1.0
         ports:
-        - containerPort: 5000
+        - containerPort: 80
       imagePullSecrets:
       - name: acr-secret
 ---
@@ -30,6 +30,6 @@ spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 5000
+    targetPort: 80
   selector:
     app: cart-api
